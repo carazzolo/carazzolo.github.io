@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articolo 1</title>
+  <!-- Collegamento al file CSS esterno -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Se usi font da Google Fonts, aggiungi anche quello -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Titolo -->
+  <header>
+    <h1>Dott. Alvise G. Carazzolo</h1>
+    <!-- Il testo "Agronomo" + container a larghezza fissa con 6 underscore come segnaposto -->
+    <h2>Agronomo <span id="dynamic-code" class="code-span">______</span></h2>
+  </header>
+
+  <!-- Contenuto Principale -->
+  <main>
+    <hr />
+    <!-- Sezione: Formazione & Percorso -->
+    <section>
+      <h3>Formazione &amp; Percorso</h3>
+      <p>
+        Ho conseguito nel 2019 la <strong>Laurea Triennale</strong> in Scienze 
+        e Tecnologie Agrarie presso l'Università degli Studi di Padova. Successivamente, ho ottenuto la <strong>Laurea 
+        Magistrale</strong> (curriculum Produzioni Vegetali) a febbraio 2022, 
+        sempre a Padova. 
+      </p>
+      <p>
+        A novembre dello stesso anno, ho superato l’esame per 
+        l’abilitazione alla professione di Agronomo. 
+        Durante gli studi ho svolto un tirocinio di 3 mesi presso il 
+        <strong>CREA-CI</strong> (Consiglio per la Ricerca in Agricoltura 
+        e l’Analisi dell’Economia Agraria – Colture Industriali) di Rovigo, 
+        con un focus sulla <em>canapa industriale</em>.
+      </p>
+      <p>
+        La mia tesi magistrale, in collaborazione con <strong>Mr. Hops</strong>, 
+        ha esplorato le potenzialità di analisi avanzata applicata ai composti 
+        volatili del luppolo, gettando le basi del mio percorso 
+        nell’elaborazione dei dati.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- Sezione: Esperienze & Progetti -->
+    <section>
+      <h3>Esperienze &amp; Progetti</h3>
+      <p>
+        Ho vissuto da vicino diverse realtà agricole, toccando con mano 
+        colture come mais, frumento, soia e barbabietola. Parallelamente, 
+        ho approfondito lo studio di <strong>immagini satellitari</strong> 
+        (NDVI, monitoraggio idrico) tramite GIS (Sistema Informativo Geografico) come strumento di supporto alle decisioni in campo.
+      </p>
+      <p>
+        Ho sviluppato un <strong>servizio API</strong> pensato per fornire 
+        <em>dati storici e prezzi aggiornati</em> dei principali prodotti 
+        agricoli. È uno strumento innovativo per chi desidera integrare 
+        quotazioni reali in gestionali e applicazioni. Per approfondire: 
+        <a href="https://agxfeed.com" target="_blank">visita il sito</a>.
+      </p>
+      <p>
+        Porto avanti anche un’<strong>apicoltura amatoriale</strong>, 
+        con un piccolo apiario e attività di recupero sciami (entro un raggio di ~60km da Padova).
+      </p>
+      <p>
+        Inoltre, mi diverto a sperimentare <strong>trading algoritmico 
+        ad alta frequenza</strong> su criptovalute sfruttando il protocollo websocket. 
+        Un progetto sperimentale che amplia le mie competenze 
+        in ambito di automazione e analisi in tempo reale.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- Sezione: Collabora con Me -->
+    <section>
+      <h3>Collabora con Me</h3>
+      <p>
+        Sostengo chiunque desideri ottimizzare i processi produttivi 
+        attraverso <em>tecnologie e analisi dati</em>. 
+        Offro consulenza a professionisti e aziende che vogliano integrare 
+        <em>satellite data</em>, <em>API</em> e strumenti di 
+        <em>machine learning</em> nei propri progetti agricoli.
+      </p>
+      <p>
+        Il mio obiettivo è trasformare le informazioni in 
+        <strong>soluzioni sostenibili</strong> e creare 
+        una sinergia tra tradizione agronomica e innovazione digitale.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- Sezione: Link Extra -->
+    <section class="extra-links">
+      <h3>Approfondimenti &amp; Articoli</h3>
+      <p>
+        In futuro pubblicherò ulteriori contenuti 
+        (progetti, ricerche e curiosità sul mondo agro-tech):
+      </p>
+      <p>
+        <a href="#" target="_blank">Articolo 1 (in arrivo)</a> |
+        <a href="#" target="_blank">Articolo 2 (in arrivo)</a>
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- Sezione contatti -->
+    <section class="contacts">
+      <h3>Contatti</h3>
+      <p>
+        <a href="mailto:email@esempio.it">Email</a>
+        | 
+        <a href="https://twitter.com/tuo_handle" target="_blank">Twitter</a>
+        | 
+        <a href="https://github.com/tuo_account" target="_blank">GitHub</a>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 - Dott. Alvise G. Carazzolo, Agronomo</p>
+  </footer>
+
+  <!-- Script per l'effetto di scrittura del codice "789356" -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Attendi 1 secondo prima di iniziare l'animazione
+      setTimeout(() => {
+        const code = '789356'         // Codice da scrivere
+        let index = 0
+        const codeEl = document.getElementById('dynamic-code')
+        
+        // Digita i caratteri uno alla volta
+        const interval = setInterval(() => {
+          // Rimpiazza l'underscore corrente con il carattere di code
+          const currentText = codeEl.textContent
+          // Sostituisci l'underscore in posizione 'index' con il carattere code[index]
+          codeEl.textContent = 
+            currentText.substring(0, index) + code[index] + currentText.substring(index + 1)
+          
+          index++
+          // Se abbiamo inserito tutti i caratteri, ferma l'intervallo
+          if (index === code.length) {
+            clearInterval(interval)
+          }
+        }, 200) // Velocità di digitazione (in millisecondi)
+      }, 1000) // 1000 ms = 1 secondo di attesa
+    })
+  </script>
+</body>
+</html>
