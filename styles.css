@@ -1,92 +1,76 @@
+/* Reset e font base */
+* {
+  box-sizing: border-box;
+}
 
-/* styles.css */
 body {
   margin: 0;
   padding: 0;
-  background-color: #0c0c0c;
-  color: #f2f2f2;
+  background-color: #f8f8f8;  /* sfondo chiaro */
+  color: #333;                /* testo scuro */
   font-family: 'IBM Plex Mono', monospace;
+  line-height: 1.6;
 }
 
-/* Header retro gradient */
-header {
+header.hero {
   text-align: center;
   padding: 40px 20px;
-  background: linear-gradient(90deg, #26EB00, #ECFF12);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.5rem;
-  text-shadow: 0 0 8px #26EB00;
+  background-color: #f0f0f0; /* un grigio chiaro per differenziare header */
 }
 
+/* Titoli */
 h1 {
-  font-size: 2.5rem;
-  margin: 0;
+  font-size: 2rem;
+  margin: 0.5em 0 0.2em;
+  color: #333; /* Scuro */
 }
-
 h2 {
+  font-size: 1.2rem;
   margin: 0;
-  font-size: 1.4rem;
-  color: #ECFF12;
+  color: #666; /* Leggermente più chiaro di h1 */
 }
 
+/* Sezioni e container */
 main {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-hr {
-  border: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #26EB00, #ECFF12);
-  margin: 40px 0;
+section {
+  margin-bottom: 40px;
 }
 
-h3 {
-  color: #ECFF12;
+/* Link */
+a {
+  color: #0066cc; /* un blu come colore di accento */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
-p {
-  line-height: 1.5;
+/* Headings delle sezioni */
+h2 {
   margin-bottom: 1em;
 }
 
-a {
-  color: #26EB00;
-  text-decoration: none;
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: #eee;
+  color: #666;
 }
 
-a:hover {
-  text-shadow: 0 0 8px #26EB00;
-}
-
+/* Eventuali stili specifici */
 .contacts {
   text-align: center;
   margin-top: 50px;
 }
-
-.extra-links {
-  text-align: center;
-  margin-top: 50px;
-}
-
-footer {
-  text-align: center;
+.operativita {
+  background-color: #fff;
   padding: 20px;
-  font-size: 0.8rem;
-  color: #777;
-}
-
-.blink {
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0%, 50% {
-    opacity: 1;
-  }
-  50.1%, 100% {
-    opacity: 0;
-  }
+  border-radius: 6px;
 }

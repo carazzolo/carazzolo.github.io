@@ -2,163 +2,105 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Sito web di Dott. Alvise G. Carazzolo, Agronomo. Consulenze in agricoltura di precisione, difesa integrata e dati agricoli.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Articolo 1</title>
+  <title>Dott. Alvise G. Carazzolo – Agronomo</title>
   <!-- Collegamento al file CSS esterno -->
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Se usi font da Google Fonts, aggiungi anche quello -->
+  <!-- Font (IBM Plex Mono) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link 
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" 
+    rel="stylesheet"
+  >
 </head>
 <body>
 
-  <!-- Header / Titolo -->
-  <header>
+  <!-- HERO SECTION essenziale -->
+  <header class="hero">
     <h1>Dott. Alvise G. Carazzolo</h1>
-    <!-- Il testo "Agronomo" + container a larghezza fissa con 6 underscore come segnaposto -->
-    <h2>Agronomo <span id="dynamic-code" class="code-span">______</span></h2>
+    <h2>Agronomo</h2>
   </header>
 
-  <!-- Contenuto Principale -->
   <main>
-    <hr />
-    <!-- Sezione: Formazione & Percorso -->
-    <section>
-      <h3>Formazione &amp; Percorso</h3>
+
+    <!-- Servizi (Macro Argomenti) -->
+    <section id="servizi" class="servizi">
+      <h2>Servizi Principali</h2>
       <p>
-        Ho conseguito nel 2019 la <strong>Laurea Triennale</strong> in Scienze 
-        e Tecnologie Agrarie presso l'Università degli Studi di Padova. Successivamente, ho ottenuto la <strong>Laurea 
-        Magistrale</strong> (curriculum Produzioni Vegetali) a febbraio 2022, 
-        sempre a Padova. 
-      </p>
-      <p>
-        A novembre dello stesso anno, ho superato l’esame per 
-        l’abilitazione alla professione di Agronomo. 
-        Durante gli studi ho svolto un tirocinio di 3 mesi presso il 
-        <strong>CREA-CI</strong> (Consiglio per la Ricerca in Agricoltura 
-        e l’Analisi dell’Economia Agraria – Colture Industriali) di Rovigo, 
-        con un focus sulla <em>canapa industriale</em>.
-      </p>
-      <p>
-        La mia tesi magistrale, in collaborazione con <strong>Mr. Hops</strong>, 
-        ha esplorato le potenzialità di analisi avanzata applicata ai composti 
-        volatili del luppolo, gettando le basi del mio percorso 
-        nell’elaborazione dei dati.
+        Mi occupo di <strong>pianificazione agronomica</strong>,
+        <strong>agricoltura di precisione</strong> (analisi NDVI, mappe di prescrizione),
+        <strong>difesa integrata</strong> (monitoraggio di malerbe e insetti),
+        <strong>dati agricoli (API)</strong> per prezzi storici e correnti,
+        e <strong>biodiversità</strong> (prati melliferi, apicoltura).
+        Se ritieni che le mie competenze possano aiutarti, 
+        scorri in basso per i contatti e maggiori informazioni.
       </p>
     </section>
 
-    <hr />
-
-    <!-- Sezione: Esperienze & Progetti -->
-    <section>
-      <h3>Esperienze &amp; Progetti</h3>
+    <!-- Chi Sono -->
+    <section id="chi-sono" class="chi-sono">
+      <h2>Chi Sono</h2>
       <p>
-        Ho vissuto da vicino diverse realtà agricole, toccando con mano 
-        colture come mais, frumento, soia e barbabietola. Parallelamente, 
-        ho approfondito lo studio di <strong>immagini satellitari</strong> 
-        (NDVI, monitoraggio idrico) tramite GIS (Sistema Informativo Geografico) come strumento di supporto alle decisioni in campo.
+        Dopo la laurea in Scienze e Tecnologie Agrarie (triennale e magistrale) 
+        e l’abilitazione come Agronomo, ho sviluppato un forte interesse 
+        per <em>tecnologie GIS</em>, <em>droni</em>, <em>API agricole</em> e analisi NDVI,
+        per migliorare la produttività dei campi con soluzioni innovative.
       </p>
       <p>
-        Ho sviluppato un <strong>servizio API</strong> pensato per fornire 
-        <em>dati storici e prezzi aggiornati</em> dei principali prodotti 
-        agricoli. È uno strumento innovativo per chi desidera integrare 
-        quotazioni reali in gestionali e applicazioni. Per approfondire: 
-        <a href="https://agxfeed.com" target="_blank">visita il sito</a>.
-      </p>
-      <p>
-        Porto avanti anche un’<strong>apicoltura amatoriale</strong>, 
-        con un piccolo apiario e attività di recupero sciami (entro un raggio di ~60km da Padova).
-      </p>
-      <p>
-        Inoltre, mi diverto a sperimentare <strong>trading algoritmico 
-        ad alta frequenza</strong> su criptovalute sfruttando il protocollo websocket. 
-        Un progetto sperimentale che amplia le mie competenze 
-        in ambito di automazione e analisi in tempo reale.
+        Credo in un approccio sostenibile, che integri la <strong>biodiversità</strong> 
+        e la <strong>gestione integrata</strong> dei parassiti, unendo la pratica 
+        agronomica tradizionale con strumenti digitali di ultima generazione.
       </p>
     </section>
 
-    <hr />
-
-    <!-- Sezione: Collabora con Me -->
-    <section>
-      <h3>Collabora con Me</h3>
+    <!-- Approfondimenti / Progetti (Opzionale) -->
+    <section id="approfondimenti" class="approfondimenti">
+      <h2>Approfondimenti &amp; Progetti</h2>
       <p>
-        Sostengo chiunque desideri ottimizzare i processi produttivi 
-        attraverso <em>tecnologie e analisi dati</em>. 
-        Offro consulenza a professionisti e aziende che vogliano integrare 
-        <em>satellite data</em>, <em>API</em> e strumenti di 
-        <em>machine learning</em> nei propri progetti agricoli.
+        Oltre alle consulenze, porto avanti progetti personali come 
+        <em><a href="https://agxfeed.com" target="_blank">AGXFeed</a></em> (API per prezzi agricoli) e sperimentazioni 
+        su modelli predittivi. 
       </p>
       <p>
-        Il mio obiettivo è trasformare le informazioni in 
-        <strong>soluzioni sostenibili</strong> e creare 
-        una sinergia tra tradizione agronomica e innovazione digitale.
+        Se vuoi saperne di più, continua a scorrere o contattami per approfondire.
       </p>
     </section>
 
-    <hr />
-
-    <!-- Sezione: Link Extra -->
-    <section class="extra-links">
-      <h3>Approfondimenti &amp; Articoli</h3>
+    <!-- Info Operative (Stile dedicato) -->
+    <section class="operativita">
+      <h2>Sede Operativa &amp; Disponibilità</h2>
       <p>
-        In futuro pubblicherò ulteriori contenuti 
-        (progetti, ricerche e curiosità sul mondo agro-tech):
-      </p>
-      <p>
-        <a href="#" target="_blank">Articolo 1 (in arrivo)</a> |
-        <a href="#" target="_blank">Articolo 2 (in arrivo)</a>
+        La mia sede operativa è in <strong>zona Padova - Rovigo</strong>; 
+        posso tuttavia spostarmi in Veneto e regioni limitrofe, 
+        o collaborare <em>da remoto</em> in caso di progetti specifici 
+        su <em>analisi dati</em> e tecnologie GIS.
       </p>
     </section>
 
-    <hr />
-
-    <!-- Sezione contatti -->
-    <section class="contacts">
-      <h3>Contatti</h3>
+    <!-- Contatti -->
+    <section id="contatti" class="contacts">
+      <h2>Contatti</h2>
       <p>
-        <a href="mailto:email@esempio.it">Email</a>
-        | 
-        <a href="https://twitter.com/tuo_handle" target="_blank">Twitter</a>
-        | 
-        <a href="https://github.com/tuo_account" target="_blank">GitHub</a>
+        <strong>Email:</strong> 
+        <a href="mailto:email@esempio.it">email@esempio.it</a><br>
+        <strong>Twitter:</strong> 
+        <a href="https://twitter.com/tuo_handle" target="_blank">@tuo_handle</a><br>
+        <strong>GitHub:</strong> 
+        <a href="https://github.com/tuo_account" target="_blank">tuo_account</a>
+      </p>
+      <p>
+        Per richieste o informazioni, sentiti libero di scrivermi: 
+        sarò lieto di valutare insieme soluzioni personalizzate.
       </p>
     </section>
 
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2024 - Dott. Alvise G. Carazzolo, Agronomo</p>
   </footer>
 
-  <!-- Script per l'effetto di scrittura del codice "789356" -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Attendi 1 secondo prima di iniziare l'animazione
-      setTimeout(() => {
-        const code = '??????'         // Codice da scrivere
-        let index = 0
-        const codeEl = document.getElementById('dynamic-code')
-        
-        // Digita i caratteri uno alla volta
-        const interval = setInterval(() => {
-          // Rimpiazza l'underscore corrente con il carattere di code
-          const currentText = codeEl.textContent
-          // Sostituisci l'underscore in posizione 'index' con il carattere code[index]
-          codeEl.textContent = 
-            currentText.substring(0, index) + code[index] + currentText.substring(index + 1)
-          
-          index++
-          // Se abbiamo inserito tutti i caratteri, ferma l'intervallo
-          if (index === code.length) {
-            clearInterval(interval)
-          }
-        }, 200) // Velocità di digitazione (in millisecondi)
-      }, 1000) // 1000 ms = 1 secondo di attesa
-    })
-  </script>
 </body>
 </html>
