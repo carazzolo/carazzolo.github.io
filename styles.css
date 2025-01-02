@@ -1,76 +1,31 @@
-/* Reset e font base */
-* {
-  box-sizing: border-box;
-}
+/* styles.css */
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;  /* sfondo chiaro */
-  color: #333;                /* testo scuro */
-  font-family: 'IBM Plex Mono', monospace;
-  line-height: 1.6;
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: calc(10px + 2vw);
+  line-height: 1.5;
+  background-color: #f6f6f6;
 }
 
-header.hero {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #f0f0f0; /* un grigio chiaro per differenziare header */
-}
-
-/* Titoli */
-h1 {
-  font-size: 2rem;
-  margin: 0.5em 0 0.2em;
-  color: #333; /* Scuro */
-}
-h2 {
-  font-size: 1.2rem;
-  margin: 0;
-  color: #666; /* Leggermente più chiaro di h1 */
-}
-
-/* Sezioni e container */
-main {
-  max-width: 800px;
+.container {
+  max-width: 600px;
   margin: 0 auto;
-  padding: 40px 20px;
-}
-
-section {
-  margin-bottom: 40px;
-}
-
-/* Link */
-a {
-  color: #0066cc; /* un blu come colore di accento */
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Headings delle sezioni */
-h2 {
-  margin-bottom: 1em;
-}
-
-/* Footer */
-footer {
-  text-align: center;
   padding: 20px;
-  font-size: 0.9rem;
-  background-color: #eee;
-  color: #666;
+  background-color: #ffffff;
+  box-sizing: border-box;
 }
 
-/* Eventuali stili specifici */
-.contacts {
-  text-align: center;
-  margin-top: 50px;
+h1, h2 {
+  margin-top: 0;
 }
-.operativita {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 6px;
+
+a, a:visited {
+  color: blue;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.2em;
 }
