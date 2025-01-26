@@ -2,58 +2,292 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Chi sono e cosa faccio</title>
-
-
-  <meta name="description" 
-        content="Scopri come tradizione e tecnologia si incontrano nel lavoro di Alvise G. Carazzolo, agronomo specializzato in analisi dati agricoli, progettazione API e DSS.">
-
-  <meta name="keywords" 
-        content="Agronomo, Alvise Carazzolo, Analisi Dati, Agricoltura, APIRest, DSS">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alvise G. Carazzolo - Agronomo</title>
+  <meta name="description" content="Agronomo innovativo specializzato in tecnologie agricole e analisi dati">
 
-  <!-- Caricamento da Google Fonts (Merriweather) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" 
-    rel="stylesheet"
-  >
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-  <!-- Collegamento al file CSS esterno -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 
+  <style>
+    :root {
+      --primary: #3D550C;
+      --secondary: #81B622;
+      --accent: #ECF87F;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 2.5rem;
+      max-width: 700px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 150px;
+      height: 150px;
+      background: var(--accent);
+      border-radius: 30px;
+      transform: rotate(45deg);
+      z-index: 0;
+    }
+
+    .header {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: 'Merriweather', serif;
+      color: var(--primary);
+      font-size: 2.4rem;
+      line-height: 1.2;
+      margin-bottom: 0.3rem;
+    }
+
+    .tagline {
+      color: var(--secondary);
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+      position: relative;
+    }
+
+    .quote-box {
+      background: var(--accent);
+      padding: 1.5rem;
+      border-radius: 15px;
+      grid-column: 1 / -1;
+    }
+
+    .quote {
+      font-style: italic;
+      color: var(--primary);
+      text-align: center;
+      margin: 0;
+    }
+
+    .project-card {
+      padding: 1.5rem;
+      border: 2px solid var(--secondary);
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-link {
+      text-decoration: none;
+      color: var(--primary);
+      display: block;
+    }
+
+    .project-title {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Nuovo stile contatti iconico */
+    .contact-wall {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .contact-icon {
+      padding: 1rem;
+      border-radius: 15px;
+      background: var(--primary);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .contact-icon:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .contact-icon i {
+      color: var(--accent);
+      font-size: 2rem;
+    }
+
+    .contact-badge {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background: var(--secondary);
+      color: white;
+      padding: 3px 8px;
+      border-radius: 10px;
+      font-size: 0.7rem;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .card::before {
+        display: none;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+
+      .contact-wall {
+        grid-template-columns: 1fr;
+      }
+    }
+
+.cert-links {
+  margin-top: 1.5rem;
+}
+
+.icon-link {
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  transition: transform 0.3s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.2) rotate(-5deg);
+  color: var(--secondary);
+}
+
+/* Animazione pulsante "soon" */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Ottimizzazione visiva */
+.contact-icon i {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.social-coming-soon {
+  background: #607D3D !important; /* Verde più scuro */
+  cursor: not-allowed;
+}
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Alvise G. Carazzolo <br> Agronomo</h1>
-    <p>
-      Credo in un approccio integrato, dove tradizione e progresso tecnologico si incontrano.
-    </p>
+  <div class="card">
+    <div class="header">
+      <h1>Alvise G. Carazzolo</h1>
+      <p class="tagline">Agronomo</p>
+    </div>
 
-    <h2>Cosa faccio</h2>
-    <p>
-      Attualmente mi occupo principalmente di:
-    </p>
-    <ul>
-      <li>Analisi ed elaborazione dati (<a href="https://hdl.handle.net/20.500.12608/9931" target="_blank">Tesi Magistrale</a>)</li>
-      <li>Progettazione di API RESTful (<a href="https://agxfeed.com" target="_blank">agxFeed</a>)</li>
-      <li>Sistemi di Supporto Decisionali (DSS)</li>
-    </ul>
-    <p>
-      Se vuoi saperne di più o collaborare a qualche progetto, sentiti libero di contattarmi!
-    </p>
+    <div class="grid">
+      <div class="quote-box">
+        <p class="quote">Credo in un approccio integrato, dove tradizione e progresso tecnologico si incontrano.</p>
+      </div>
 
-    <h2>Contatti</h2>
-    <p>
-      Email: <a href="mailto:alvise.carazzolo@spidmail.it">alvise.carazzolo@spidmail.it</a><br>
-    </p>
+      <div class="project-card">
+        <a href="https://agxfeed.com" target="_blank" class="project-link">
+          <div class="project-title">
+            <i class="fas fa-seedling"></i>
+            <h3>agxFeed Platform</h3>
+          </div>
+          <p>Piattaforma innovativa per l'analisi dati agricoli e API management</p>
+        </a>
+      </div>
 
-    <h2>Link utili</h2>
-    <ul>
-      <li><a href="https://credential.unipd.it/blockcerts/806bd040-3011-11ed-8bd9-47ace71e2661" target="_blank">Diploma Laurea (Ethereum PoW!!!)</a></li>
-    </ul>
+<!-- Modifica nella sezione Certificazioni -->
+<div class="project-card">
+  <div class="project-title">
+    <i class="fas fa-graduation-cap"></i>
+    <h3>Certificazioni</h3>
+  </div>
+  <p><strong>Laurea Magistrale in<br>Scienze e Tecnologie Agrarie</strong></p>
+  <div class="cert-links">
+    <a href="https://credential.unipd.it/blockcerts/806bd040-3011-11ed-8bd9-47ace71e2661" 
+       target="_blank" 
+       class="icon-link"
+       title="Diploma">
+      <i class="fas fa-certificate"></i>
+    </a>
+    <a href="https://hdl.handle.net/20.500.12608/9931" 
+       target="_blank" 
+       class="icon-link"
+       title="Tesi">
+      <i class="fas fa-file-alt"></i>
+    </a>
+  </div>
+</div>
+
+    <!-- Sezione Contatti Iconica Rivista -->
+    <div class="contact-wall">
+      <!-- Posta Certificata -->
+      <a href="mailto:alvise.carazzolo@spidmail.it" 
+         class="contact-icon" 
+         title="Posta Certificata (SPID)"
+         style="position: relative;">
+        <i class="fas fa-shield-alt"></i> <!-- Icona alternativa più visibile -->
+        <div class="contact-badge">SPID</div>
+      </a>
+
+      <!-- Email Istituzionale -->
+      <a href="mailto:contatto@agxfeed.com" 
+         class="contact-icon" 
+         title="Email Diretta">
+        <i class="fas fa-envelope-open-text"></i> <!-- Icona più grande -->
+      </a>
+
+      <!-- Social Futuro -->
+      <div class="contact-icon social-coming-soon" 
+           title="Segui gli aggiornamenti (prossimamente)">
+        <i class="fab fa-x-twitter"></i>
+        <div class="contact-badge pulse">🚜</div> <!-- Emoji tematica -->
+      </div>    </div>
   </div>
 </body>
 </html>
